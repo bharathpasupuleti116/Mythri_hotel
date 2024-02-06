@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mythri Hotel</title>
+  <link rel="stylesheet" href="D:/mythri_hotel/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <header>
+    <div class="content flex_space">
+      <div class="logo">
+        <h1>Mythri Hotel</h1>
+      </div>
+        <div class="navlinks">
+        <ul id="menulist">
+          <li><a href="#home">home</a> </li>
+          <li><a href="#about">about</a> </li>
+          <li><a href="#rooms">rooms</a> </li>
+          <li><a href="#gallery">gallery</a> </li>
+          <li><a href="#services">services</a></li>
+          <li><a href="#news">news</a> </li>
+          <li><a href="#contact">contact</a> </li>
+          <li> <i class="fa fa-search"></i> </li>
+          <li><button class="primary-btn" onclick="redirectToRooms()">BOOK NOW</button>
+          </li>
+        </ul>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+      </div>
+    </div>
+  </header>
+
+
+  <script>
+    var menulist = document.getElementById('menulist');
+    menulist.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menulist.style.maxHeight == "0px") {
+        menulist.style.maxHeight = "100vh";
+      } else {
+        menulist.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+  <section id="home">
+    <section class="home">
+      <div class="content">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="D:/mythri_hotel/images/banner-1.png" alt="">
+            <div class="text">
+              <h1>Spend Your Holiday</h1>
+              <p>It is the perfect choice for the discerning travellers.
+              </p>
+              <div class="flex">
+                <button class="primary-btn">READ MORE</button>
+                <button class="secondary-btn"onclick="redirectToContact()">CONTACT US</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="D:/mythri_hotel/images/banner-2.png" alt="">
+            <div class="text">
+              <h1>Spend Your Holiday</h1>
+              <p>It is the perfect choice for the discerning travellers.
+              </p>
+              <div class="flex">
+                <button class="primary-btn">READ MORE</button>
+                <button class="secondary-btn"onclick="redirectToContact()">CONTACT US</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="D:/mythri_hotel/images/banner-3.png" alt="">
+            <div class="text">
+              <h1>Spend Your Holiday</h1>
+              <p>It is the perfect choice for the discerning travellers.
+              </p>
+              <div class="flex">
+                <button class="primary-btn">READ MORE</button>
+                <button class="secondary-btn"onclick="redirectToContact()">CONTACT US</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script>
+    function redirectToContact(){
+      var roomsSection=document.getElementById("box");
+      roomsSection.scrollIntoView({behavior:'smooth'});
+    }
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+
+
+  <section id="book">
+    <section class="book">
+      <div class="container flex_space">
+        <div class="text">
+          <h1> <span>Book </span> Your Rooms </h1>
+        </div>
+        <div class="form">
+          <form class="grid">
+            <input type="date" placeholder="Araival Date">
+            <input type="date" placeholder="Departure Date">
+            <input type="number" placeholder ="Adults">
+            <input type="number" placeholder="Children">
+            <input type="submit" value="CHECK AVAILABILITY">
+          </form>
+        </div>
+      </div>
+    </section>
+  </section>
+
+<section id="about">
+ <section id="about top">
+  <section class="about top">
+    <div class="container flex">
+      <div class="left">
+        <div class="heading">
+          <h1>WELCOME</h1>
+          <h2>Mythri Hotel</h2>
+        </div>
+        <p>mythri hotel is a chain of luxury hotels and a subsidiary of the pasupuleti Hotels Company Limited,headquartered in Mumbai, India. Incorporated by bharath kumar pasupuleti and his partner swapna konapuram in 2022,the company is a part of the pasupuleti Group. The company employed over 20,000 people in the year 2023.</p>
+        <button class="primary-btn">ABOUT US</button>
+      </div>
+      <div class="right">
+        <img src="D:/mythri_hotel/images/about.png" alt="">
+      </div>
+    </div>  
+ </section>
+</section>
+ <section id="counter top">
+  <section class="counter top">
+    <div class="container grid">
+      <div class="box">
+        <h1>25000</h1>
+        <hr>
+        <span>Customer</span>
+      </div>
+      <div class="box">
+        <h1>12500</h1>
+        <hr>
+        <span>Happy Customer</span>
+      </div>
+      <div class="box">
+        <h1>1500</h1>
+        <hr>
+        <span>Expert Technicians</span>
+      </div>
+      <div class="box">
+        <h1>3550</h1>
+        <hr>
+        <span>Desktop Reaired</span>
+      </div>
+    </div>
+  </section>
+</section>
+</section>
+
+
+  <section id="rooms">
+    <section class="rooms">
+      <div class="container top">
+        <div class="heading">
+          <h1>EXPOLRE</h1>
+          <h2>Our Rooms</h2>
+          <p>
+          </p>
+        </div>
+
+        <div class="content mtop">
+          <div class="owl-carousel owl-carousel1 owl-theme">
+            <div class="items">
+              <div class="image">
+                <img src="D:/mythri_hotel/images/room-1.png" alt="">
+              </div>
+              <div class="text">
+                <h2>Superior Rooms</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>Our Superior Room comprises of 1 Double bed or 2 Twin Beds, 2 Bedside Tables, a Desk & Chair. This room is larger than the Standard Room and is therefore spacious enough for an additional bed for triple occupancy. (Triple Room). The room is furnished with wall to wall carpeting, trendy furnishings and a balcony. 
+                <div class="button flex">
+                  <button class="primary-btn" onclick="redirectToRooms()">BOOK NOW</button>
+                  <h3>Rs30000/- <span> <br> Per Night </span> </h3>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="D:/mythri_hotel/images/room-2.png" alt="">
+              </div>
+              <div class="text">
+                <h2>Deluxe Rooms</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>Our Deluxe room is a spacious single occupancy adobe. It has a single mega bed, a writing desk, and a chair. The rooms are specially designed to create the perfect setting for a romantic weekend. The rooms also provide you with bathrobes, mineral water & snacks upon arrival.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn" onclick="redirectToRooms()">BOOK NOW</button>
+                  <h3>Rs45000/- <span> <br> Per Night </span> </h3>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="D:/mythri_hotel/images/room-3.png" alt="">
+              </div>
+              <div class="text">
+                <h2>Executive Rooms</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>Our Executive rooms have a magnificent view  of the city, all of which you can enjoy and chill in the rooms. The rooms are specially designed to create the perfect setting to the couple which are newly married for a romantic weekend. The rooms also provide you with bathrobes, mineral water & snacks upon arrival.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn" onclick="redirectToRooms()">BOOK NOW</button>
+                  <h3>Rs25000/-<span> <br> Per Night </span> </h3>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="D:/mythri_hotel/images/room-4.png" alt="">
+              </div>
+              <div class="text">
+                <h2>Suite Rooms</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>Our Suites are typically defined by their separated spaces. The bedroom is often separated from the living space by a wall, sometimes with a privacy door. The living room may include a pull-out sofa to accommodate additional guests as well. Suites also tend to include a separate kitchen area 
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn" onclick="redirectToRooms()">BOOK NOW</button>
+                  <h3>Rs45000/- <span> <br> Per Night </span> </h3>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="D:/mythri_hotel/images/room-5.png" alt="">
+              </div>
+              <div class="text">
+                <h2>Presidential Rooms</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>Our Presidential suites are known for being some of the most impressive. If a hotel offers this suite type, there are usually only one or two available in the entire hotel — even with the largest brands. Presidential suites are some of the most expensive hotel rooms available for richer peoples.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn" onclick="redirectToRooms()">BOOK NOW</button>
+                  <h3>Rs100000/- <span> <br> Per Night </span> </h3>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="D:/mythri_hotel/images/room-6.png" alt="">
+              </div>
+              <div class="text">
+                <h2>Honeymoon Rooms</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>Our honeymoon suites are also known as romance suites. Honeymoon suites usually offer amenities, services, and special accommodations related to romance. Guests may arrive to find champagne, roses, chocolates, and fresh flowers in their room. Many newlyweds book honeymoon suites as part of a vacation 
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn" onclick="redirectToRooms()">BOOK NOW</button>
+                  <h3>Rs80000/-<span> <br> Per Night </span> </h3>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="D:/mythri_hotel/images/room-7.png" alt="">
+              </div>
+              <div class="text">
+                <h2>Bridal Rooms</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>Our Hotels that specialize in wedding services and accommodation often offer bridal suites to help the bridal party prepare for the big day. Typically large, open rooms with flexible work areas, many soon-to-be-weds use this space to get their makeup and hair done, get dressed, and celebrate with the bridal party.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn" onclick="redirectToRooms()">BOOK NOW</button>
+                  <h3>Rs50000/- <span> <br> Per Night </span> </h3>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="D:/mythri_hotel/images/room-8.png" alt="">
+              </div>
+              <div class="text">
+                <h2>Penthouse Rooms</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>Our Penthouse suites are usually located on the top floor of a luxury building and can take up the entire floor. Hotels that offer these accommodations are often found in the heart of iconic cities. Many casinos, luxury hotels, and exclusive resorts offer these suites to their most valued guests. 
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn" onclick="redirectToRooms()">BOOK NOW</button>
+                  <h3>Rs90000/- <span> <br> Per Night </span> </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <script>
+    function redirectToRooms(){
+      var roomsSection=document.getElementById("book");
+      roomsSection.scrollIntoView({behavior:'smooth'});
+    }
+      $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 40,
+      nav: true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2,
+          margin: 10,
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+   
+  </script>
+
+
+ <section id="gallery">
+      <section class="gallery">
+        <div class="container top">
+          <div class="heading">
+            <h1>PHOTOS</h1>
+            <h2>Our Gallery</h2>
+          </div>
+        </div>
+
+        <div class="content mtop">
+          <div class="owl-carousel owl-carousel1 owl-theme">
+            <div class="items">
+              <div class="img">
+                <img src="D:/mythri_hotel/images/gallery-1.png" alt="">
+              </div>
+              <div class="overlay">
+                <span class="fa fa-plus"> </span>
+                <h3>Photo Title Here.</h3>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img">
+                <img src="D:/mythri_hotel/images/gallery-2.png" alt="">
+              </div>
+              <div class="overlay">
+                <span class="fa fa-plus"> </span>
+                <h3>Photo Title Here.</h3>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img">
+                <img src="D:/mythri_hotel/images/gallery-3.png" alt="">
+              </div>
+              <div class="overlay">
+                <span class="fa fa-plus"> </span>
+                <h3>Photo Title Here.</h3>
+              </div>
+            </div>
+            <div class="items"> 
+              <div class="img">
+                <img src="D:/mythri_hotel/images/gallery-4.png" alt="">
+              </div>
+              <div class="overlay">
+                <span class="fa fa-plus"> </span>
+                <h3>Photo Title Here.</h3>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img">
+                <img src="D:/mythri_hotel/images/gallery-5.png" alt="">
+              </div>
+              <div class="overlay">
+                <span class="fa fa-plus"> </span>
+                <h3>Photo Title Here.</h3>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img">
+                <img src="D:/mythri_hotel/images/gallery-6.png" alt="">
+              </div>
+              <div class="overlay">
+                <span class="fa fa-plus"> </span>
+                <h3>Photo Title Here.</h3>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img">
+                <img src="D:/mythri_hotel/images/gallery-4.png" alt="">
+              </div>
+              <div class="overlay">
+                <span class="fa fa-plus"> </span>
+                <h3>Photo Title Here.</h3>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img">
+                <img src="D:/mythri_hotel/images/gallery-3.png" alt="">
+              </div>
+              <div class="overlay">
+                <span class="fa fa-plus"> </span>
+                <h3>Photo Title Here.</h3>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img">
+                <img src="D:/mythri_hotel/images/gallery-1.png" alt="">
+              </div>
+              <div class="overlay">
+                <span class="fa fa-plus"> </span>
+                <h3>Photo Title Here.</h3>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img">
+                <img src="D:/mythri_hotel/images/gallery-6.png" alt="">
+              </div>
+              <div class="overlay">
+                <span class="fa fa-plus"> </span>
+                <h3>Photo Title Here.</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+ </section>
+
+
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 4,
+        },
+        1000: {
+          items: 6
+        }
+      }
+    })
+  </script>
+
+ <section id="services">
+  <section class="services top">
+    <div class="container">
+      <div class="heading">
+        <h1>SERVICES</h1>
+        <h2>Our Services</h2>
+      </div>
+      <div class="content flex_space">
+        <div class="left grid2">
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-champagne-glasses"></i>
+              <h3>Delious Food</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-person-biking"></i>
+              <h3>Fintness</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-utensils"></i>
+              <h3>Inhouse Restaurant</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-spa"></i>
+              <h3>Beauty Spa</h3>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <img src="D:/mythri_hotel/images/service.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section class="Customer top">
+    <div class="container">
+      <div class="owl-carousel owl-carousel2 owl-theme">
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>Stay was comfortable and the superior room was decent in size with a balcony. The view from the balcony was scenic and we could feel the nature and peace throughout our stay. The breakfast buffet was tasty with good quality and hygiene. The staff was friendly and helpful.</p>
+          <h3>Samuel John Peter</h3>
+          <label>Samuel John Peter</label>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>Good , in terms of food it’s excellent , rooms are good and modern. Location is excellent and staff is also very good . The hotel earns a yes yes recommendation for future stay and would not be a compromise at any levels or points. Good for family stay as well</p>
+          <h3>Lalitha Sagari Perambaku</h3>
+          <label>Lalitha Sagari Perambaku</label>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>Very courteous and polite staff.Excellent breakfast and amenities, with close proximity to various attractions,very clean and spacious rooms, and excellent housekeeping and restaurant services</p>
+          <h3>V M Bhargavi</h3>
+          <label>V M Bhargavi</label>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1,
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+ <section id="news">
+  <section class="news top rooms">
+    <div class="container">
+      <div class="heading">
+        <h1>NEWS</h1>
+        <h2>Our News</h2>
+      </div>
+
+      <div class="content flex">
+        <div class="left grid2">
+          <div class="items">
+            <div class="image">
+              <img src="D:/mythri_hotel/images/blog-1.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Resto&Bar</h2>
+              <div class="admin flex">
+                <i class="fa fa-user"></i>
+                <label>Admin</label>
+                <i class="fa fa-heart"></i>
+                <label>500</label>
+                <i class="fa fa-comments"></i>
+              </div>
+              <p>A restaurant is a business that prepares and serves food and drinks to customers.Meals are generally served and eaten on the premises</p>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="D:/mythri_hotel/images/blog-2.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Connecting Rooms</h2>
+              <div class="admin flex">
+                <i class="fa fa-user"></i>
+                <label>Admin</label>
+                <i class="fa fa-heart"></i>
+                <label>500</label>
+                <i class="fa fa-comments"></i>
+              </div>
+              <p> Connecting rooms lie side by side on a hotel floor. While connecting rooms have separate outside entrances, they're also connected inside via a set of two doors.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="box flex">
+            <div class="img">
+              <img src="D:/mythri_hotel/images/blog-s1.png" alt="">
+            </div>
+            <div class="stext">
+              <h2>Hotel Villa</h2>
+              <p>a group of villa is owned by the mythri hotels.
+              </p>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <img src="D:/mythri_hotel/images/blog-s2.png" alt="">
+            </div>
+            <div class="stext">
+              <h2>Beach Faced Hotel</h2>
+              <p>the hotel having well sided to the near beach.
+              </p>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <img src="D:/mythri_hotel/images/blog-s3.png" alt="">
+            </div>
+            <div class="stext">
+              <h2>Food Court</h2>
+              <p>the hotel having well arranged food court
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+  <section class="newsletter mtop">
+    <div class="container flex_space">
+      <h1>Subscribe to Our Newsletter</h1>
+      <input type="text" placeholder="Your Email">
+      <button class="primary-btn">subscribe</button>
+      
+    </div>
+  </section>
+
+
+  <footer>
+    <section id="contact">
+    <div class="container grid">
+      <div class="box">
+        <h1>Mythri Hotel</h1>
+        <p>mythri hotel is a chain of luxury hotels and a subsidiary of the pasupuleti Hotels Company Limited,headquartered in Mumbai, India. Incorporated by bharath kumar pasupuleti and his partner swapna konapuram in 2022,the company is a part of the pasupuleti Group. The company employed over 20,000 people in the year 2023</p>
+
+        <div class="icon">
+          <i class="fa fa-facebook-f"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-youtube"></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Links</h2>
+        <ul>
+          <li>Company History</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Services</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h2>Contact Us</h2>
+        <p>mythri hotel is a chain of luxury hotels and a subsidiary of the pasupuleti Hotels
+        </p>
+        <i class="fa fa-location-dot"></i>
+        <label>1396 Sravani Street, Venkateshwarlu Avenue, Suryaprakash Nagar, Near Sravanthi Multispeciality Hospitals, Nellore Dst, Andhra Pradesh. </label> <br>
+        <i class="fa fa-phone"></i>
+        <label>[+91] 9876543210</label> <br>
+        <i class="fa fa-envelope"></i>
+        <label>info@mythrihotel.com</label> <br>
+      </div>
+    </div>
+  </section>
+  </footer>
+
+  <div class="legal">
+    <p class="container">Copyright (c) 2023 Copyright Holder All Rights Reserved.</p>
+  </div>
+
+
+
+  <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
